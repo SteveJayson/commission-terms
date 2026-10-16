@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Commission Service Agreement & Terms</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 min-h-screen py-10 px-4">
+
+    <div class="max-w-2xl mx-auto bg-white rounded-xl shadow-md overflow-hidden p-8 border border-gray-100">
+        <h1 class="text-2xl font-bold text-gray-900 mb-2">Commission Service Agreement</h1>
+        <p class="text-sm text-gray-500 mb-6">Please fill out your details and review our terms before proceeding.</p>
+
+        <!-- Form pointing directly to your Google Apps Script Web App -->
+        <form action="https://script.google.com/macros/s/AKfycbwEqPphEd0ZdxhM0NnlYePdn8ra5l_X50VqpD_AXcFmQODDpeek-EozDc3u5GenP0N4VQ/exec" method="POST" class="space-y-4">
+            
+            <!-- Client Info Fields -->
+            <div>
+                <label class="block text-sm font-medium text-gray-700 mb-1">Full Name</label>
+                <input type="text" name="Full_Name" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-indigo-500 focus:border-indigo-500">
+            </div>
+
+            <div>
+                <label class="block text-sm font-medium text-gray-700 mb-1">Email Address</label>
+                <input type="email" name="Email" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-indigo-500 focus:border-indigo-500">
+            </div>
+
+            <div>
+                <label class="block text-sm font-medium text-gray-700 mb-1">Project Details / Brief</label>
+                <textarea name="Project_Details" rows="4" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-indigo-500 focus:border-indigo-500"></textarea>
+            </div>
+
+            <!-- Terms Content Box -->
+            <div class="space-y-3 text-gray-700 text-sm max-h-48 overflow-y-auto pr-2 border border-gray-200 rounded-lg p-4 bg-gray-50 my-4">
+                <h2 class="font-semibold text-gray-900">1. Pay-As-You-Order Policy</h2>
+                <p>All projects and commission requests operate under a strict pay-as-you-order structure. Work on specific milestones or deliverables commences only after the corresponding payment stage has been verified and processed.</p>
+
+                <h2 class="font-semibold text-gray-900">2. Strict No-Refund Policy</h2>
+                <p>Due to the custom digital nature of our systems, presentations, and creative services, <strong>all payments are strictly non-refundable</strong> once a milestone or order phase has been initiated or delivered.</p>
+            </div>
+
+            <!-- Agreement Checkbox -->
+            <div class="flex items-start space-x-3">
+                <input type="checkbox" id="agree" name="Agreement" value="Agreed" required class="mt-1 h-4 w-4 text-indigo-600 border-gray-300 rounded focus:ring-indigo-500">
+                <label for="agree" class="text-sm text-gray-700">
+                    I have read, understood, and agree to the Commission Terms and Conditions, including the Pay-As-You-Order and No-Refund policies.
+                </label>
+            </div>
+
+            <button type="submit" class="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-medium py-3 px-4 rounded-lg transition duration-200 shadow-sm">
+                Submit Agreement & Proceed
+            </button>
+        </form>
+    </div>
+
+</body>
+</html>
